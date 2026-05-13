@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>教科書販売予約サイト</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f6f8f6;
+      color: #333;
+    }
+
+    header {
+      background: #2e7d32;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 20px auto;
+      padding: 10px;
+    }
+
+    .section {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    h2 {
+      color: #2e7d32;
+      margin-top: 0;
+    }
+
+    .schedule {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .box {
+      flex: 1;
+      min-width: 300px;
+      background: #f1f8f1;
+      padding: 15px;
+      
+    }
+
+    .flow {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .step {
+        flex: 1;
+        min-width: 150px;
+        background: white;
+        padding: 12px;
+        border-radius: 8px;
+        text-align: center;
+        position: relative;
+        font-size: 14px;
+        border:none;
+    }
+
+
+    .step:last-child::after {
+      content: "";
+    }
+
+    .button {
+      display: inline-block;
+      background: green;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .button:hover {
+      background: green;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 12px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  教科書販売予約サイト（デモページ）
+</header>
+
+<div class="container">
+
+  <div class="section">
+    <h2>販売日時・営業時間</h2>
+    <div class="schedule">
+      <div class="box">
+        <h3>新入生限定販売</h3>
+        <p>3/29〜3/31 10:00〜16:30</p>
+        <p>4/3・4/5 10:00〜16:30</p>
+        <p>※休業日あり</p>
+      </div>
+
+      <div class="box">
+        <h3>全学年対象</h3>
+        <p>4/8〜4/17（平日）</p>
+        <p>時間：10:00〜17:00</p>
+        <p>※土日休み</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>利用の流れ</h2>
+      <p>① 来店予約</p>
+      <p>② 注文番号発行</p>
+      <p>③ 来店</p>
+      <p>④ 番号提示</p>
+      <p>⑤ 受け取り・会計</p>
+  </div>
+
+  <div class="section" >
+    <h2>①来店予約</h2>
+    <p>予約をすると、列に並ばずに購入できます</p>
+    <p>販売は予約の方から優先して行いますので、<strong style="color:red;">必ず来店予約をしてご来店ください</strong></p>
+    <a class="button" href="https://airrsv.net/kumcooptext/calendar" target="_blank" rel="noopener noreferrer">来店予約サイトはこちら</a>
+  </div>
+  <div class="section">
+    <h2>②注文番号を発行する</h2>
+    <p>ご来店日までに、本サイトで「注文番号」を発行してください</p>
+    <a class="button" href="https://airrsv.net/kumcooptext/calendar" target="_blank" rel="noopener noreferrer">①新規会員登録（初回のみ）</a>
+    <p>☆GmailまたはOutlook推奨</p>
+    <p>☆メール受信確認をしてください</p>
+    <p>☆メールが届かない場合は以下をご確認ください</p>
+    <p>・受信フォルダがいっぱいになっていないか</p>
+    <p>・メールアドレスのドメイン設定</p>
+    <p>・迷惑メールフォルダに入っていないか</p>
+    <p>②教科書検索</p>
+    <a class="button" href="https://www.kyushuba-univcoop.jp/textbook/kumamoto-u/index.php?a=search&clear=1" target="_blank" rel="noopener noreferrer">教科書検索はこちら </a>
+    <p>☆教科書を検索するときは、少ない「検索条件」で調べるとスムーズです</p>
+    <p>③必要な教科書を「リストに追加」し、「マイページ登録」する</p>
+    <p>☆印刷できる方はご協力ください</p>
+    <p>④「生協に注文する」と、「注文番号」が発行されメールが届く</p>
+    <h3>↓詳しくはこちら↓</h3>
+    <img src="https://www.kyushuba-univcoop.jp/textbook/kumamoto-u/admin/webapp/data_images/html_images/250924%E6%95%99%E7%A7%91%E6%9B%B8%E6%A4%9C%E7%B4%A2%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%81%94%E5%88%A9%E7%94%A8%E6%96%B9%E6%B3%95-01.png" style="max-width: 50%; height: auto;">
+  </div>
+
+  <div class="section">
+    <h2>③ご来店</h2>
+    <p>予約日に教科書販売会場へお越しください</p>
+    <p>メールで受け取った注文番号をスタッフへ提示してください</p>
+    <p>電子組合員証提示で10%OFFになります</p>
+    <p>※在庫状況により引換対応となる場合があります</p>
+  </div>
+
+  <div class="section">
+    <h2>④お支払い</h2>
+    <p><strong>大学生協電子マネー</strong>または<strong>現金</strong></p>
+    <p>※表示価格は税抜（物品は税込）</p>
+    <p>※組合員割引あり（電子組合員証提示）</p>
+    <p>※返品は原則不可（不良品除く）</p>
+  </div>
+
+  <div class="section">
+    <h2>⑤販売場所・注意事項</h2>
+    <p><strong>黒髪北地区 学生会館2階 大集会室</strong></p>
+    <img src="https://www.kyushuba-univcoop.jp/textbook/kumamoto-u/admin/webapp/data_images/html_images/%E3%80%90%E7%94%BB%E5%83%8F%E3%80%91%E6%95%99%E7%A7%91%E6%9B%B8%E8%B2%A9%E5%A3%B2%E4%BC%9A%E5%A0%B4(1).png" style="max-width: 25%; height: auto;">
+    <p>＜医学部・薬学部の方＞</p>    
+    <p>語学・教養科目：上記教科書販売会場にて</p>
+    <p>専門科目：各地区生協店舗でご購入ください</p>
+    <p>※シラバス変更により内容が変わる場合あり</p>
+    <p>※未掲載教科書は問い合わせ</p>
+  </div>
+  <div style="max-width:500px; margin:20px auto; padding:10px;">
+    <div style="background:rgba(211, 206, 151, 0.831); padding:20px; border-radius:10px; text-align:center; border:1px solid #ddd;">
+        <p style="margin:5px 0; font-weight:bold;">
+            熊本大学生活協同組合　学生会館ショップ
+        </p>
+        <p style="margin:5px 0;">
+            TEL：096-343-6321　FAX：096-345-8239
+        </p>
+    </div>
+  </div>
+  <div style="text-align:center;">
+    <a class="button" href="https://www.kyushuba-univcoop.jp/textbook/kumamoto-u/index.php?a=search" target="_blank" rel="noopener noreferrer">🔍検索する </a>
+  </div>
+
+</div>
+
+<footer>
+  © 教科書販売予約サイト（サンプル）
+</footer>
+
+</body>
+</html>
